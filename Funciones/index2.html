@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>fuction2</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+  //'use strict';
+
+  function suma() {
+    var resultado = 0;
+
+    for (var i = 0; i < arguments.length; i++){
+      resultado += arguments[i];
+    }
+
+    return resultado;
+
+  }
+
+  console.log("El resultado de la suma es");
+  console.log(suma(10,20,30,40,55));
+
+
+  function resta() {
+    var resultado = arguments[0];
+    for (var i = 1; i < arguments.length; i++){
+      resultado -= arguments[i];
+    }
+    return resultado;
+  }
+
+  console.log("El resultado de la resta es");
+  console.log(resta(10,20,30,40,59));
+
+  function multiplicacion() {
+    var resultado = 1;
+    for (var i = 0; i < arguments.length; i++){
+      resultado *= arguments[i];
+    }
+    return resultado;
+  }
+  console.log("El resultado de la multiplicacion es");
+  console.log(multiplicacion(10,20,30,40,55));
+
+  function division() {
+    var resultado = 1;
+    for (var i = 0; i < arguments.length; i++){
+      resultado /= arguments[i];
+    }
+    return resultado;
+  }
+  console.log("El resultado de la division es");
+  console.log(division(10,20,30,40,55));
+
+
+  </script>
+
+
+</body>
+</html>
